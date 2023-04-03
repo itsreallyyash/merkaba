@@ -67,5 +67,3 @@ $(document).ready(function() {
     });
   }); // end DOM ready
 })(jQuery); // end jQuery
-
-$('.carousel').carousel();
