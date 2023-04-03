@@ -1,3 +1,84 @@
+@font-face {
+  font-family: Gilroy-Black;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Black.ttf);
+}
+@font-face {
+  font-family: Gilroy-BlackItalic;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Bold.ttf);
+}
+@font-face {
+  font-family: Gilroy-BoldItalic;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Gilroy-ExtraBold;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Gilroy-ExtraBoldItalic;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-ExtraBoldItalic.ttf);
+}
+@font-face {
+  font-family: Gilroy-Heavy;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Heavy.ttf);
+}
+@font-face {
+  font-family: Gilroy-HeavyItalic;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-HeavyItalic.ttf);
+}
+@font-face {
+  font-family: Gilroy-Light;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Light.ttf);
+}
+@font-face {
+  font-family: Gilroy-LightItalic;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-LightItalic.ttf);
+}
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: Gilroy-MediumItalic;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-MediumItalic.ttf);
+}
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: Gilroy-RegularItalic;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-RegularItalic.ttf);
+}
+@font-face {
+  font-family: Gilroy-SemiBold;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: Gilroy-SemiBoldItalic;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-SemiBoldItalic.ttf);
+}
+@font-face {
+  font-family: Gilroy-Thin;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Thin.ttf);
+}
+@font-face {
+  font-family: Gilroy-ThinItalic;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-ThinItalic.ttf);
+}
+@font-face {
+  font-family: Gilroy-UltraLight;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-UltraLight.ttf);
+}
+@font-face {
+  font-family: Gilroy-UltraLightItalic;
+  src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-UltraLightItalic.ttf);
+}
+
 *,
 ::after,
 ::before {
@@ -356,12 +437,19 @@ textarea {
 }
 .main{
   width: 100%;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    margin-top: 105px;
 }
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .hero{
-      display: flex;
+    display: flex;
     flex-direction: column;
     height: 100vh;
     align-items: flex-start;
@@ -371,6 +459,8 @@ textarea {
     bottom: 0;
     width: auto;
     padding-left: 4rem;
+    z-index: 100;
+    pointer-events: none;
 }
 .hero-title{
   font-family: Gilroy-UltraLight;
@@ -768,5 +858,3 @@ article {
   margin: 0 auto;
   padding: 10px;
 }
-
-
