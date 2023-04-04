@@ -27,7 +27,7 @@ tls.to(".loading-page-text", 0.8, {
 });
 
 
-tl.fromTo(".hero-title h1",{ opacity: 0 }, { opacity: 1,  y: "0%", duration: 1, stagger: 0.25 });
+tl.fromTo(".hero-title h1, h2, .container",{ opacity: 0 }, { opacity: 1,  y: "0%", duration: 1, stagger: 0.25 });
 
 $(document).ready(function() {  
     
