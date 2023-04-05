@@ -2,78 +2,97 @@
   font-family: Gilroy-Black;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Black.ttf);
 }
+
 @font-face {
   font-family: Gilroy-BlackItalic;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-BlackItalic.ttf);
 }
+
 @font-face {
   font-family: Gilroy-Bold;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Bold.ttf);
 }
+
 @font-face {
   font-family: Gilroy-BoldItalic;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-BoldItalic.ttf);
 }
+
 @font-face {
   font-family: Gilroy-ExtraBold;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-ExtraBold.ttf);
 }
+
 @font-face {
   font-family: Gilroy-ExtraBoldItalic;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-ExtraBoldItalic.ttf);
 }
+
 @font-face {
   font-family: Gilroy-Heavy;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Heavy.ttf);
 }
+
 @font-face {
   font-family: Gilroy-HeavyItalic;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-HeavyItalic.ttf);
 }
+
 @font-face {
   font-family: Gilroy-Light;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Light.ttf);
 }
+
 @font-face {
   font-family: Gilroy-LightItalic;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-LightItalic.ttf);
 }
+
 @font-face {
   font-family: Gilroy-Medium;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Medium.ttf);
 }
+
 @font-face {
   font-family: Gilroy-MediumItalic;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-MediumItalic.ttf);
 }
+
 @font-face {
   font-family: Gilroy-Regular;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Regular.ttf);
 }
+
 @font-face {
   font-family: Gilroy-RegularItalic;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-RegularItalic.ttf);
 }
+
 @font-face {
   font-family: Gilroy-SemiBold;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-SemiBold.ttf);
 }
+
 @font-face {
   font-family: Gilroy-SemiBoldItalic;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-SemiBoldItalic.ttf);
 }
+
 @font-face {
   font-family: Gilroy-Thin;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-Thin.ttf);
 }
+
 @font-face {
   font-family: Gilroy-ThinItalic;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-ThinItalic.ttf);
 }
+
 @font-face {
   font-family: Gilroy-UltraLight;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-UltraLight.ttf);
 }
+
 @font-face {
   font-family: Gilroy-UltraLightItalic;
   src: url(https://unpkg.com/aks-fonts@1.0.0/Gilroy/Gilroy-UltraLightItalic.ttf);
@@ -92,20 +111,22 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   overflow-x: hidden;
 }
-html {
-    font-family: sans-serif;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
+
 body {
-    font: 1.0625rem Gilroy-Regular;
-    line-height: 1.5;
-    color: #000;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+  font: 1.0625rem Gilroy-Regular;
+  line-height: 1.5;
+  color: #000;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /* Navbar */
@@ -126,9 +147,11 @@ body {
   z-index: 99;
   color: #fff;
 }
+
 .menufr {
   margin-right: 10px;
 }
+
 .search {
   flex: 0 0 auto;
   padding: 20px 0;
@@ -162,9 +185,10 @@ body {
 
 /* Hero */
 
-.main{
+.main {
   width: 100%;
 }
+
 .carousel-item {
   height: 100vh;
 }
@@ -176,33 +200,35 @@ body {
 }
 
 .hero {
-    display: block;
-    height: 100vh;
-    justify-content: center;
-    position: absolute;
-    top: 280px;
-    padding-left: 10rem;
-    z-index: 100;
-    pointer-events: none;
-    width: 700px;
+  display: block;
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+  top: 280px;
+  padding-left: 10rem;
+  z-index: 100;
+  pointer-events: none;
+  width: 700px;
 }
-.hero-title{
+
+.hero-title {
   font-family: Gilroy-Regular;
   overflow: hidden;
   position: absolute;
 }
-.hero-title h1{
-    line-height: normal;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: #2b2b2b;
-    transform: translateY(100%);
-    overflow: hidden;
-    font-size: 60px;
-    color: white;
-    margin-bottom: 30px;
+
+.hero-title h1 {
+  line-height: normal;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #2b2b2b;
+  transform: translateY(100%);
+  overflow: hidden;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 30px;
 }
 
 .hero-title h2 {
@@ -247,6 +273,7 @@ body {
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
 }
+
 .button-2:hover {
   background-position: 100%;
   color: rgb(255, 255, 255);
@@ -369,10 +396,12 @@ figure.card--2:hover {
   font-size: inherit;
   font-family: inherit;
 }
+
 .featured button.learn-more {
   width: 12rem;
   height: auto;
 }
+
 .featured button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
@@ -383,6 +412,7 @@ figure.card--2:hover {
   background: #282936;
   border-radius: 1.625rem;
 }
+
 .featured button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -391,6 +421,7 @@ figure.card--2:hover {
   margin: auto;
   background: #fff;
 }
+
 .featured button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
@@ -398,6 +429,7 @@ figure.card--2:hover {
   height: 0.125rem;
   background: none;
 }
+
 .featured button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
@@ -409,6 +441,7 @@ figure.card--2:hover {
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);
 }
+
 .featured button.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -424,13 +457,16 @@ figure.card--2:hover {
   text-align: center;
   text-transform: uppercase;
 }
+
 .featured button:hover .circle {
   width: 100%;
 }
+
 .featured button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
 }
+
 .featured button:hover .button-text {
   color: #fff;
 }
@@ -556,21 +592,26 @@ figure.card--2:hover {
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
 .gtco-testimonials h2 {
   font-size: 30px;
   text-align: center;
   color: #333333;
   margin-bottom: 50px;
 }
+
 .gtco-testimonials .owl-stage-outer {
   padding: 30px 0;
 }
+
 .gtco-testimonials .owl-nav {
   display: none;
 }
+
 .gtco-testimonials .owl-dots {
   text-align: center;
 }
+
 .gtco-testimonials .owl-dots span {
   position: relative;
   height: 10px;
@@ -581,9 +622,11 @@ figure.card--2:hover {
   border: 2px solid #01b0f8;
   margin: 0 5px;
 }
+
 .gtco-testimonials .owl-dots .active {
   box-shadow: none;
 }
+
 .gtco-testimonials .owl-dots .active span {
   background: #01b0f8;
   box-shadow: none;
@@ -591,6 +634,7 @@ figure.card--2:hover {
   width: 12px;
   margin-bottom: -1px;
 }
+
 .gtco-testimonials .card {
   background: #fff;
   box-shadow: 0 8px 30px -7px #c9dff0;
@@ -599,6 +643,7 @@ figure.card--2:hover {
   border-radius: 20px;
   border: 0;
 }
+
 .gtco-testimonials .card .card-img-top {
   max-width: 100px;
   border-radius: 50%;
@@ -607,17 +652,20 @@ figure.card--2:hover {
   width: 100px;
   height: 100px;
 }
+
 .gtco-testimonials .card h5 {
   color: #f89101;
   font-size: 21px;
   line-height: 1.3;
   font-family: Gilroy-Regular;
 }
+
 .gtco-testimonials .card h5 span {
   font-size: 18px;
   color: #666666;
   font-family: 'Prata, serif';
 }
+
 .gtco-testimonials .card p {
   font-size: 17px;
   color: #555;
@@ -647,15 +695,19 @@ figure.card--2:hover {
   opacity: 0.5;
   transition: all 0.3s;
 }
+
 .gtco-testimonials .center {
   opacity: 1;
 }
+
 .gtco-testimonials .center h5 {
   font-size: 24px;
 }
+
 .gtco-testimonials .center h5 span {
   font-size: 20px;
 }
+
 .gtco-testimonials .center .card-img-top {
   max-width: 100%;
   height: 120px;
@@ -667,10 +719,239 @@ figure.card--2:hover {
     margin-top: 20px;
   }
 }
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
   outline: 0;
 }
+
 .owl-carousel button.owl-dot {
   outline: 0;
 }
 
+.image-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 30%;
+  margin: 0 1%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50% 50% 0 0;
+  bottom: -50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay:hover {
+  bottom: 0;
+}
+
+/* Shop now */
+
+.img-container {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 60px;
+  margin-top: 200px;
+}
+
+.img-box {
+  position: relative;
+  width: 33%;
+  margin-right: 60px;
+  /* add 60px of margin to the right */
+}
+
+.img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.txt {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.prim-txt {
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.sec-txt {
+  z-index: 0;
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+.img-box .top-left-text {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: Gilroy-Regular;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.img-box .top-right-text {
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: Gilroy-Regular;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.img-box:hover .sec-txt {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px; /* add padding to the sides */
+  margin-top: 200px;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  padding: 20px; /* add padding to the boxes */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.icon-box i {
+  font-size: 3rem; /* set the size of the icons */
+  margin-bottom: 10px;
+}
+
+.icon-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.icon-description {
+  font-size: 1rem;
+  color: #666;
+}
+  
+.icon-box:not(:first-child) {
+  margin-left: 40px; /* add margin to the boxes except the first one */
+}
+
+
+
+.newsletter-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-title {
+  font-size: 36px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.newsletter-text {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.newsletter-input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.newsletter-submit {
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.newsletter-submit:hover {
+  background-color: #ff6600;
+}
+
+.newsletter-policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-checkbox {
+  margin-right: 5px;
+}
+
+.newsletter-label {
+  font-size: 14px;
+}
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
