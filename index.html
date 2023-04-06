@@ -28,10 +28,12 @@
       <span></span>
       <span></span>
       <ul id="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Info</li></a>
-        <a href="#"><li>Contact</li></a>
+        <a href="index.html"><li>Home</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a href="necklaces.html"><li>Shop</li></a>
+        <a href="candles.html"><li>Candles</li></a>
+        <a href="cart.html"><li>Cart</li></a>
+
       </ul>
     </div>
 
@@ -219,21 +221,21 @@
 
     <div class="img-container">
         <div class="img-box">
-            <div class="top-left-text">SHOP BY CATEGORY -></div>
+            <a class="top-left-text" href="#">SHOP BY CATEGORY →</a>
             <img class="img" src="assets/Reva-304'22(2)-LR001.jpg">
-            <div class="txt prim-txt">Necklaces</div>
-            <div class="txt sec-txt">Hover over me</div>
+            <div class="txt prim-txt"><%= n_name1 %></div>
+            <div class="txt sec-txt"><%= n_description1 %></div>
         </div>
         <div class="img-box">
             <img class="img" src="assets/Reva-304'22(2)-NL009.jpg">
-            <div class="txt prim-txt">Image 2</div>
-            <div class="txt sec-txt">Hover over me</div>
+            <div class="txt prim-txt"><%= n_name2 %></div>
+            <div class="txt sec-txt"><%= n_description2 %></div>
         </div>
         <div class="img-box">
             <img class="img" src="assets/Reva-304'22(2)-PS009.jpg">
-            <div class="txt prim-txt">Image 3</div>
-            <div class="txt sec-txt">Hover over me</div>
-            <div class="top-right-text">EXPLORE MORE -></div>
+            <div class="txt prim-txt"><%= n_name3 %></div>
+            <div class="txt sec-txt"><%= n_description3 %></div>
+            <a class="top-right-text" href="#">EXPLORE MORE →</a>
         </div>
     </div>
 
