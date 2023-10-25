@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Merkaba Jewellery</title>
 
   <link rel="stylesheet" href="./responsive_style.css">
@@ -33,7 +35,6 @@
         <a href="necklaces.html"><li>Shop</li></a>
         <a href="candles.html"><li>Candles</li></a>
         <a href="cart.html"><li>Cart</li></a>
-
       </ul>
     </div>
 
@@ -177,8 +178,7 @@
               <div class="card-body">
                 <h5>Ronne Galle <br />
                 </h5>
-                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                  impedit quo minus id quod maxime placeat ” </p>
+                <p class="card-text">“ Exquisite craftsmanship! My recent purchase, a diamond necklace, has become my everyday favorite. It's simply stunning! ” </p>
               </div>
             </div>
           </div>
@@ -189,8 +189,7 @@
               <div class="card-body">
                 <h5>Missy Limana<br />
                 </h5>
-                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                  impedit quo minus id quod maxime placeat ” </p>
+                <p class="card-text">“ A go-to for quality jewelry! I've been a loyal customer for years, and their pieces never disappoint. ” </p>
               </div>
             </div>
           </div>
@@ -201,8 +200,7 @@
               <div class="card-body">
                 <h5>Martha Brown<br />
                 </h5>
-                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                  impedit quo minus id quod maxime placeat ” </p>
+                <p class="card-text">“ Personalized perfection! The custom earrings I ordered were a heartfelt birthday gift, and they brought tears of joy. ” </p>
               </div>
             </div>
           </div>
@@ -213,8 +211,7 @@
               <div class="card-body">
                 <h5>Hanna Lisem<br />
                 </h5>
-                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                  impedit quo minus id quod maxime placeat ” </p>
+                <p class="card-text">“ Trustworthy and beautiful! The online shopping experience was seamless, and my earrings arrived promptly and stunning. ” </p>
               </div>
             </div>
           </div>
@@ -277,20 +274,30 @@
 
     
     <footer>
-      <div class="footer-links">
-        <a href="#">ABOUT</a>
-        <a href="#">STORE LOCATION</a>
-        <a href="#">CONTACT</a>
-        <a href="#">DELIVERY</a>
-        <a href="#">FAQS</a>
-        <a href="#">CONTACT</a>
-        <a href="#">DELIVERY</a>
-        <a href="#">FAQS</a>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Store Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Delivery</a></li>
+            <li><a href="contact.html">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact-info">
+          <h3>Contact Us</h3>
+          <p>
+            Address: 123 Main St, City<br>
+            Phone: (123) 456-7890<br>
+            Email: info@example.com
+          </p>
+        </div>
       </div>
-    </footer>
-    
-    
-    
+      <div class="footer-bottom">
+        &copy; 2023 Your Company Name | All Rights Reserved
+      </div>
+    </footer>  
   
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
@@ -310,6 +317,20 @@
 
     <script src="https://kit.fontawesome.com/b831735088.js" crossorigin="anonymous"></script>
 
+
+<div id="search-container" style="display: none;">
+  <input type="text" id="search-bar" placeholder="Search...">
+</div>
+<button id="search-btn">🔍</button>
 </body>
 
-</html>
+
+<script>
+  const searchBtn = document.getElementById('search-btn');
+  const searchBarContainer = document.getElementById('search-container');
+
+  searchBtn.addEventListener('click', function() {
+    searchBarContainer.style.display = searchBarContainer.style.display === 'none' ? 'block' : 'none';
+  });
+</script>
+</body></html>

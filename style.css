@@ -392,7 +392,7 @@ body {
   display: flex;
   bottom: 30px;
   width: 200px;
-  left: 6.5rem;
+  left: 60px;
 }
 
 .hero .button .button-2 {
@@ -1089,25 +1089,75 @@ figure.card--2:hover {
 
 
 
+/* Footer styles */
 footer {
-  background-color: #333;
+  background-color: #232323;
   color: #fff;
-  padding: 20px;
-  margin-top: 100px;
+  padding: 40px 0;
 }
 
-.footer-links {
+.footer-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.footer-links a {
+.footer-section {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffd700; /* Yellow color for headings */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
   color: #fff;
   text-decoration: none;
-  padding: 5px;
+  transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.footer-section a:hover {
+  color: #ffd700; /* Yellow color on hover */
+}
+
+.contact-info {
+  flex: 1;
+  text-align: right;
+}
+
+.contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffd700; /* Yellow color for headings */
+}
+
+.contact-info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #888; /* Light gray color for copyright text */
+}
+
+.footer-bottom p {
+  margin: 0;
 }
