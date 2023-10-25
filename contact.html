@@ -1,299 +1,113 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title> Title</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            color: #555;
-        }
-
-        input[type="text"],
-        input[type="password"],
-        input[type="email"],
-        input[type="tel"],
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        select {
-            height: 40px;
-            background-color: #fff;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        #error-message {
-            color: red;
-            margin-top: 5px;
-        }
-
-        .success {
-            color: #5cb85c;
-        }
-
-        input[type="text"],
-        input[type="password"],
-        input[type="email"],
-        input[type="tel"],
-        select {
-            background-color: #f3f3f3;
-        }
-
-        .gender-container label {
-            display: inline-block;
-            margin-right: 10px;
-        }
-
-        .hobbies-container label {
-            display: inline-block;
-            margin-right: 10px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Your Jewelry Store</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
-
-
 <body>
-    <form>
+    <header>
+        <h1>Contact Us</h1>
+        <h2>We'd love to hear from you</h2>
+    </header>
 
-
-        <label for="name">Name:</label>
-        <input type="text" id="name" onkeyup="validateName()">
-        <div id="name-error"></div>
-        <br><br>
-
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" onkeyup="validatePassword()">
-        <div id="password-error"></div><br><br>
-
-
-        <label for="confirm-password">Confirm Password:</label>
-        <input type="password" id="confirm-password" onkeyup="validateConfirmPassword()">
-        <div id="confirm-password-error"></div><br><br>
-
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" onkeyup="validateEmail()">
-        <div id="email-error"></div><br><br>
-
-
-        <label for="mobile">Mobile Number:</label>
-        <input type="tel" id="mobile" onkeyup="validateMobile()">
-        <div id="mobile-error"></div><br><br>
-
-
-        <label for="pan">PAN Card:</label>
-        <input type="text" id="pan" onkeyup="validatePAN()">
-        <div id="pan-error"></div><br><br>
-
-
-        <label for="aadhar">Aadhaar Card:</label>
-        <input type="text" id="aadhar" onkeyup="validateAadhaar()">
-        <div id="aadhar-error"></div><br><br>
-
-
-        <label for="country">Country: </label>
-        <select id="country" name="country">
-            <option value="">Select a country</option>
-            <option value="india">India</option>
-            <option value="us">USA</option>
-            <option value="uk">UK</option>
-        </select>
-        <div id="country-error"></div>
-        <br><br>
-
-
-        <label for="gender">Gender: </label>
-        <div class="gender-container">
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label>
+    <section class="contact-info">
+        <div class="contact-form">
+            <h3>Contact Form</h3>
+            <form id="contact-form" action="#" method="post">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
         </div>
-        <div id="gender-error"></div>
-        <br><br>
-
-        <label for="hobbies">Hobbies: </label>
-        <div class="hobbies-container">
-            <input type="checkbox" id="reading" name="hobbies" value="reading">
-            <label for="reading">Reading</label>
-            <input type="checkbox" id="writing" name="hobbies" value="writing">
-            <label for="writing">Writing</label>
-            <input type="checkbox" id="traveling" name="hobbies" value="traveling">
-            <label for="traveling">Traveling</label>
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p><strong>Address:</strong> 123 Main St, City, ZIP</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> info@yourjewelrystore.com</p>
         </div>
-        <div id="hobbies-error"></div>
-        <br><br>
+    </section>
 
-        <button type="submit">Submit</button>
+    <div class="how-to">
+        <center>
+    <section class="location">
+        <h3>Our Location</h3>
+        <p>We are located in the heart of the city. Come visit us and explore our stunning jewelry collections.</p>
 
-    </form>
-    <script>
-        function validateName() {
-            let name = document.getElementById("name").value;
-            let nameRegex = /^[a-zA-Z\s]+$/;
-            let error = document.getElementById("name-error");
-            if (name.trim() === "") {
-                error.innerHTML = "Name is required";
-            } else if (!nameRegex.test(name)) {
-                error.innerHTML = "Name should only contain alphabets and spaces";
-            } else {
-                error.innerHTML = "";
-            }
-        }
+    </section>
 
-        function validatePassword() {
-            let password = document.getElementById("password").value;
-            let error = document.getElementById("password-error");
-            if (password.trim() === "") {
-                error.innerHTML = "Password is required";
-            } else if (password.length < 8) {
-                error.innerHTML = "Password should be at least 8 characters long";
-            } else {
-                error.innerHTML = "";
-            }
-        }
+    <div class="separator"></div>
 
-        function validateConfirmPassword() {
-            let password = document.getElementById("password").value;
-            let confirmPassword = document.getElementById("confirm-password").value;
-            let error = document.getElementById("confirm-password-error");
-            if (confirmPassword.trim() === "") {
-                error.innerHTML = "Please confirm your password";
-            } else if (password !== confirmPassword) {
-                error.innerHTML = "Passwords do not match";
-            } else {
-                error.innerHTML = "";
-            }
-        }
+    <section class="business-hours">
+        <h3>Business Hours</h3>
+        <p>Monday - Friday: 9 AM - 6 PM</p>
+        <p>Saturday: 10 AM - 4 PM</p>
+        <p>Sunday: Closed</p>
+    </section>
 
-        function validateEmail() {
-            let email = document.getElementById("email").value;
-            let emailRegex = /\S+@\S+\.\S+/;
-            let error = document.getElementById("email-error");
-            if (email.trim() === "") {
-                error.innerHTML = "Email is required";
-            } else if (!emailRegex.test(email)) {
-                error.innerHTML = "Please enter a valid email address";
-            } else {
-                error.innerHTML = "";
-            }
-        }
+    <div class="separator"></div>
 
-        function validateMobile() {
-            let mobile = document.getElementById("mobile").value;
-            let mobileRegex = /^[0-9]{10}$/;
-            let error = document.getElementById("mobile-error");
-            if (mobile.trim() === "") {
-                error.innerHTML = "Mobile number is required";
-            } else if (!mobileRegex.test(mobile)) {
-                error.innerHTML = "Please enter a valid 10-digit mobile number using only numeric digits";
-            } else {
-                error.innerHTML = "";
-            }
-        }
+    <section class="customer-support">
+        <h3>Customer Support</h3>
+        <p>For any inquiries or assistance, please don't hesitate to contact our customer support team.</p>
+        <p><strong>Phone:</strong> (800) 123-4567</p>
+        <p><strong>Email:</strong> support@yourjewelrystore.com</p>
+    </section>
 
-        function validatePAN() {
-            let pan = document.getElementById("pan").value;
-            let panRegex = /^[A-Z]{5}[0-9]{4}[A-Z]$/;
-            let error = document.getElementById("pan-error");
-            if (pan.trim() === "") {
-                error.innerHTML = "PAN card number is required";
-            } else if (!panRegex.test(pan)) {
-                error.innerHTML = "Please enter a valid PAN card number";
-            } else {
-                error.innerHTML = "";
-            }
-        }
+    <div class="separator"></div>
 
-        function validateAadhaar() {
-            let aadhaar = document.getElementById("aadhar").value;
-            let aadhaarRegex = /^\d{12}$/;
-            let error = document.getElementById("aadhar-error");
-            if (aadhaar.trim() === "") {
-                error.innerHTML = "Aadhaar card number is required";
-            } else if (!aadhaarRegex.test(aadhaar)) {
-                error.innerHTML = "Please enter a valid Aadhaar card number";
-            } else {
-                error.innerHTML = "";
-            }
-        }
+    <section class="social-media">
+        <h3>Connect With Us</h3>
+    </section>
 
-        function validateCountry() {
-            let country = document.getElementById("country").value;
-            let error = document.getElementById("country-error");
-            if (country === "") {
-                error.innerHTML = "Please select a country";
-            } else {
-                error.innerHTML = "";
-            }
-        }
+    <section class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Return Policy</a></li>
+        </ul>
+    </section>
 
+    <div class="separator"></div>
 
-        function validateGender() {
-            let gender = document.querySelector('input[name="gender"]:checked');
-            let error = document.getElementById("gender-error");
-            if (gender === null) {
-                error.innerHTML = "Please select a gender";
-            } else {
-                error.innerHTML = "";
-            }
-        }
+    <section class="faqs">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq">
+            <h4>How do I track my order?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+        <div class="faq">
+            <h4>How do I return an item?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+        <div class="faq">
+            <h4>How do I exchange an item?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+        <div class="faq">
+            <h4>How do I contact customer support?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+    </section>
+</div>
+</center>
 
-        function validateHobbies() {
-            let hobbies = document.querySelectorAll('input[name="hobbies"]:checked');
-            let error = document.getElementById("hobbies-error");
-            if (hobbies.length === 0) {
-                error.innerHTML = "Please select at least one hobby";
-            } else {
-                error.innerHTML = "";
-            }
-        }
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Shipping Information</a>
+            <a href="#">Returns & Exchanges</a>
+        </div>
+        <p>&copy; 2023 Your Jewelry Store</p>
+    </footer>
+    
 
-    </script>
+    <script src="validation.js"></script>
+
 </body>
-
 </html>
